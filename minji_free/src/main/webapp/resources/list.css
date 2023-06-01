@@ -1,0 +1,76 @@
+@charset "UTF-8";
+.table-wrap{
+	width: 80%;
+	padding: 20px;
+}
+table {
+	border-collapse: collapse;
+	border: 1px solid #a39485;
+	font-size: 15px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.25);
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+th{
+	text-align: left;
+}
+thead{
+	font-weight: bold;
+	color: #fff;
+	background: #73685d;
+	font-size: 16px;
+}
+td, th{
+	padding: 10px 10px;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+td:first-child{
+	width: 15px;
+	text-align: center;
+}
+td:nth-child(2){
+	width: 80px;
+}
+td:nth-child(3){
+	width: 100px;
+}
+td:nth-child(4){
+	width: 150px;
+}
+td:nth-child(5){
+ 	width: 80px;
+}
+td:last-child{
+ 	width: 130px;
+}
+td{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	background: #fff;
+}
+.table-title{
+	width: 60px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.content{
+	width: 80px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.goList{
+	width: 80%;
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-end;
+}
+.write-title{
+	width: 95%;
+	height: 100%;
+	border: none;
+	font-size: 13px;
+	margin-left: 8px;
+}

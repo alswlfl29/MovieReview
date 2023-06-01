@@ -1,0 +1,61 @@
+@charset "UTF-8";
+.table-wrap{
+	width: 80%;
+	padding: 20px;
+}
+/* read페이지 */
+tr{
+	border: 2px solid rgba(0,0,0,0.1);
+}
+.read-wrap{
+	border-collapse: collapse;
+	border: 1px solid #a39485;
+	font-size: 15px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.25);
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.read-wrap .read-word{
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	background: #73685d;
+	font-size: 16px;
+	width: 100px;
+	padding: 10px 10px;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+.read-wrap .read-content{
+	background: #fff;
+	padding: 10px 10px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	line-height: 1.6;
+}
+
+.goList{
+	width: 80%;
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-end;
+}
+.write-title{
+	width: 95%;
+	height: 100%;
+	border: none;
+	font-size: 16px;
+	margin-left: 8px;
+}
+
+.write-content{
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-radius: 10px;
+	font-size: 13px;
+	padding: 20px;
+	box-sizing: border-box;
+	line-height: 1.6;
+}

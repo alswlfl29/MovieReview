@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.tukorea.free.mapper.ReviewMapper">
+  <insert id="insert">
+  	insert into reviews (user_id, movie_id, title, content) values
+  	(#{user_id}, #{movie_id}, #{title}, #{content})
+  </insert>
+  
+  <select id="selectByid" resultType="org.tukorea.free.domain.ReviewVO">
+  	select * from reviews where review_id=#{review_id}
+  </select>
+
+  <select id="selectByid2" resultType="String">
+  	select nickname from user where user_id=#{user_id}
+  </select>
+  
+  <select id="selectAll" resultType="org.tukorea.free.domain.ReviewVO">
+  	<![CDATA[
+  		select * from reviews where movie_id=#{movie_id}
+  	]]>
+  </select>
+  
+  <update id="update">
+  	update reviews set title=#{title}, content=#{content} where review_id=#{review_id}
+  </update>
+  
+  <delete id="delete">
+  	delete from reviews where review_id=#{review_id}
+  </delete>
+	
+</mapper>  
+
